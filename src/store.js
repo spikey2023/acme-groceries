@@ -4,6 +4,8 @@ const initialState = {
   groceries: [],
   view: ''
 };
+
+
 const store = createStore((state = initialState, action)=> {
   if(action.type === 'LOAD'){
     state = {...state, groceries: action.groceries };
